@@ -10,7 +10,6 @@ class Solution {
             rightSum += nums[i+1];
             leftSum[i] = Math.abs(rightSum - leftSum[i]);
         }  
-        System.out.println(Arrays.toString(leftSum));
         return leftSum;
     }
 }
