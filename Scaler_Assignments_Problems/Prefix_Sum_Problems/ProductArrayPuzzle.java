@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import java.util.Scanner;
 
 class ProductArrayPuzzle{
     //write main function   
@@ -10,26 +9,61 @@ class ProductArrayPuzzle{
         int[] arr = new int[n];
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
+        
         }
-        productArray(arr);
+        //create object class and access productExceptSelf method   
+        ProductArrayPuzzle obj = new ProductArrayPuzzle();
+        // BruteForce Approach
+        // System.out.println(Arrays.toString(obj.productExceptSelfB(arr)));
+        // System.out.println(Arrays.toString(obj.productExceptSelfO(arr)));
+        System.out.println(Arrays.toString(obj.productExceptSelfO1(arr)));
     }
-    public static void productArray(int[] arr){
-        int n = arr.length;
-        int[] left = new int[n];
-        int[] right = new int[n];
-        left[0] = 1;
-        right[n-1] = 1;
-        for(int i=1;i<n;i++){
-            left[i] = arr[i-1]*left[i-1];
+    public int[] productExceptSelfB(int[] nums) {
+        int result[] = new int[nums.length];
+        for(int i = 0; i < nums.length; i++){
+            int temp = 1;
+            for(int j = 0; j < nums.length; j++){
+                if( i != j ){
+                    temp *= nums[j];
+                }
+            }
+            result[i] = temp;
         }
-        for(int i=n-2;i>=0;i--){
-            right[i] = arr[i+1]*right[i+1];
-        }
-        for(int i=0;i<n;i++){
-            arr[i] = left[i]*right[i];
-        }
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
-        }
+        return result;
     }
-}
+
+    public int[] productExceptSelfO(int[] nums){
+        int prefix[] = new int[nums.length];
+        int n = nums.length;
+        prefix[0] = 1;
+        for(int i = 1; i < n; i++){
+            prefix[i] = prefix[i-1] * nums[i-1];
+        }
+        int rightSum = 1, temp = 1;
+        for(int i = n-1; i >= 0; i--){
+            rightSum = nums[i];
+            nums[i] = prefix[i] * temp;
+            temp *= rightSum;
+        }
+        return nums;
+    
+    }
+
+    public int[] productExceptSelfO1(int[] nums){
+        int n = nums.length;
+        int leftProduct[] = new int[n];
+        int rightProduct[] = new int[n];
+        leftProduct[0] = 1;
+        rightProduct[n-1] = 1;
+        for(int i = 1; i < n; i++){
+            leftProduct[i] = nums[i-1] * leftProduct[i-1]; 
+        }
+        for(int i =  n-2; i >= 0; i--){
+            rightProduct[i] = nums[i+1] * rightProduct[i+1];
+        }
+        for(int i = 0; i < n; i++){
+            nums[i] = leftProduct[i] * rightProduct[i];
+        }
+        return nums;    
+    }
+}us
