@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 
 class ProductArrayPuzzle{
     //write main function   
@@ -17,6 +16,7 @@ class ProductArrayPuzzle{
         // System.out.println(Arrays.toString(obj.productExceptSelfB(arr)));
         // System.out.println(Arrays.toString(obj.productExceptSelfO(arr)));
         System.out.println(Arrays.toString(obj.productExceptSelfO1(arr)));
+        sc.close();
     }
     public int[] productExceptSelfB(int[] nums) {
         int result[] = new int[nums.length];
@@ -66,4 +66,4 @@ class ProductArrayPuzzle{
         }
         return nums;    
     }
-}us
+}
