@@ -1,3 +1,5 @@
+package Scaler_Assignments_Problems.Prefix_Sum_Problems;
+
 import java.util.*;
 
 class ProductArrayPuzzle{
