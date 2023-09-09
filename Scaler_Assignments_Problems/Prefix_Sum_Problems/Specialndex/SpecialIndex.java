@@ -9,6 +9,7 @@ public class SpecialIndex{
             arr[i] = sc.nextInt();
         }
         System.out.println(findSpecialIndexB(arr, n));
+        sc.close();
     }
 
     public static int findSpecialIndexB(int arr[], int size){

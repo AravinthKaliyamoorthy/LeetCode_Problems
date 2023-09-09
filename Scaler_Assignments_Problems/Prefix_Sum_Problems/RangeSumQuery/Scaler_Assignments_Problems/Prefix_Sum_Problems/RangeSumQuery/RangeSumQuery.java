@@ -1,5 +1,6 @@
+package Scaler_Assignments_Problems.Prefix_Sum_Problems.RangeSumQuery;
+
 import java.util.*;
-import java.io.*;
 
 public class RangeSumQuery{ 
     public static void main(String[] args) { 

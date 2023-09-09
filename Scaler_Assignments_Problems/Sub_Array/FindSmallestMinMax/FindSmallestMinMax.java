@@ -44,24 +44,24 @@ public class FindSmallestMinMax{
 
         System.out.println("Smallest subarray length is : "+length);
 
-        // minE = Integer.MAX_VALUE; maxE = Integer.MIN_VALUE; minId = -1; maxId = -1;
-        // arraySize = arr.length; length = arraySize;
-        // // finding smallest subarray which contains both min and max element --> optimized approach
-        // for(int i = 0; i < arraySize; i++){
-        //     if(arr[i] ==  minE){
-        //         minId = i;
-        //         if(maxId != -1){
-        //             length = Math.min(length, minId - maxId + 1);
-        //         }
-        //     }
-        //     if(arr[i] ==  maxE){
-        //         maxId = i;
-        //         if(minId != -1){
-        //             length = Math.min(length, maxId - minId + 1);
-        //         }
-        //     }
-        // }
+        minE = Integer.MAX_VALUE; maxE = Integer.MIN_VALUE; minId = -1; maxId = -1;
+        arraySize = arr.length; length = arraySize;
+        // finding smallest subarray which contains both min and max element --> optimized approach
+        for(int i = 0; i < arraySize; i++){
+            if(arr[i] ==  minE){
+                minId = i;
+                if(maxId != -1){
+                    length = Math.min(length, minId - maxId + 1);
+                }
+            }
+            if(arr[i] ==  maxE){
+                maxId = i;
+                if(minId != -1){
+                    length = Math.min(length, maxId - minId + 1);
+                }
+            }
+        }
 
-        // System.out.println("Smallest subarray length is : "+length);
+        System.out.println("Smallest subarray length is : "+length);
     }
 }

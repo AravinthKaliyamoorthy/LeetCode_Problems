@@ -26,5 +26,6 @@ public class NumberPrint{
             }
             System.out.println();
         }
+        in.close();
     }    
 }
