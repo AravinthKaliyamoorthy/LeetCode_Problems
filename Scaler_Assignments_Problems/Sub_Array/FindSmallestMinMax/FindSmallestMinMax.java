@@ -3,7 +3,7 @@ package Scaler_Assignments_Problems.Sub_Array.FindSmallestMinMax;
 public class FindSmallestMinMax{
     
     public static void main(String args[]){
-        int arr[] = {2, 1, 4, 6   , 5, 2, 6, 3, 4, 6, 5, 3, 2, 1, 1};
+        int arr[] = {2, 1, 4, 6 , 5, 2, 6, 3, 4, 6, 5, 3, 2, 1, 1};
         // int arr[] = {8, 9};        
         int minE = Integer.MAX_VALUE, maxE = Integer.MIN_VALUE, minId = -1, maxId = -1;
         int arraySize = arr.length, length = arraySize;
@@ -17,8 +17,9 @@ public class FindSmallestMinMax{
                 maxE = arr[i];
             }
         }
-        // System.out.println("max: " + maxE + " min: " + minE);
+
         //finding smallest subarray which contains both min and max element --> brute force approach
+        //TC: O(N^2) SC: O(1)
         boolean minB = false, maxB = false;
         for(int i = 0; i < arraySize; i++){
             if(arr[i] == minE){
@@ -36,17 +37,16 @@ public class FindSmallestMinMax{
                         length = Math.min(length, j - i + 1);
                     }
                 }
-                // System.out.println("Smallest subarray length is : "+length);                
                 minB = maxB = false;
             }
             
         }
-
         System.out.println("Smallest subarray length is : "+length);
 
         minE = Integer.MAX_VALUE; maxE = Integer.MIN_VALUE; minId = -1; maxId = -1;
         arraySize = arr.length; length = arraySize;
-        // finding smallest subarray which contains both min and max element --> optimized approach
+        //finding smallest subarray which contains both min and max element --> optimized approach
+        //TC: O(N) SC: O(1)
         for(int i = 0; i < arraySize; i++){
             if(arr[i] ==  minE){
                 minId = i;
@@ -61,7 +61,6 @@ public class FindSmallestMinMax{
                 }
             }
         }
-
         System.out.println("Smallest subarray length is : "+length);
     }
 }

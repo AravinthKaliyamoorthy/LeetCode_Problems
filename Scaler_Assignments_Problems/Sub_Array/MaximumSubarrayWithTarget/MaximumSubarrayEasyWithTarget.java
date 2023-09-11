@@ -1,6 +1,6 @@
-package Scaler_Assignments_Problems.Sub_Array.MaximumSubarrayEasy;
+package Scaler_Assignments_Problems.Sub_Array.MaximumSubarrayWithTarget;
 
-public class MaximumSubarrayEasy {
+public class MaximumSubarrayEasyWithTarget {
     public static void main(String[] args) {
         // int arr[] = {2, 1, 3, 4, 5};
         int arr[] = {2, 2, 2};
