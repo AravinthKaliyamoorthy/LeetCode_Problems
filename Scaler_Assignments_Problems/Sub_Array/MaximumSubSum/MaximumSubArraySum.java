@@ -1,14 +1,28 @@
 package Scaler_Assignments_Problems.Sub_Array.MaximumSubSum;
 
+import java.util.*;
+
 public class MaximumSubArraySum {
     public static void main(String[] args) {
         int arr[] = {-1, 2, -1, 3, -1, -4, -2, -1, 7, -2};
 
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr.length; j++){
+                if(arr[i] < arr[j]){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(arr));
+
         //brute force approach -> TC: O(N^2) SC: O(1)
-        bruteForce(arr, arr.length);
+        // bruteForce(arr, arr.length);
 
         //optimized approach -> TC: O(N) SC: O(1)
-        optimizedApproach(arr, arr.length);
+        // optimizedApproach(arr, arr.length);
     }
 
     public static void bruteForce(int arr[], int arraySize){
