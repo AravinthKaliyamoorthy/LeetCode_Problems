@@ -7,19 +7,19 @@ package Zoho_Interview_Problems.Arrays.StringWithNumbersAndOperators;
 public class StringWithNumbersAndOperators{
     public static void main(String args[]){
         String str = "12345*+-+";
-        int start = 1, sum = str.chatAt(0);
-        for(int i = 0; i < str.length; i++){
-            if(str.chatAt(i) == '*'){
-                sum += str.chatAt(sum) * str.chatAt(start++);
+        int start = 1, sum = str.charAt(0);
+        for(int i = 0; i < str.length(); i++){
+            if(str.charAt(i) == '*'){
+                sum += str.charAt(sum) * str.charAt(start++);
             }
-            if(str.chatAt(i) == '*'){
-                sum += str.chatAt(start) * str.chatAt(start++);
+            if(str.charAt(i) == '*'){
+                sum += str.charAt(start) * str.charAt(start++);
             }
-            if(str.chatAt(i) == '*'){
-                sum += str.chatAt(start) * str.chatAt(start++);
+            if(str.charAt(i) == '*'){
+                sum += str.charAt(start) * str.charAt(start++);
             }
-            if(str.chatAt(i) == '*'){
-                sum += str.chatAt(start) * str.chatAt(start++);
+            if(str.charAt(i) == '*'){
+                sum += str.charAt(start) * str.charAt(start++);
             }
         }
     }
