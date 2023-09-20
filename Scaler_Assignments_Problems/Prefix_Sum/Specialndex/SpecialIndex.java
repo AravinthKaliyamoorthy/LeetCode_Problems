@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Prefix_Sum_Problems.Specialndex;
+package Specialndex;
 
 import java.util.Scanner;
 

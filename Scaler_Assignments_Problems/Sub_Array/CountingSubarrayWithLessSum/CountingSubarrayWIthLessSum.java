@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.CountingSubarrayWithLessSum;
+package CountingSubarrayWithLessSum;
 
 public class CountingSubarrayWIthLessSum{
     public static void main(String[] args) {

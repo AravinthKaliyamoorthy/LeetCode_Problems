@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.PatternPrinting.NumberPrint;
+package NumberPrint;
 
 import java.util.*;
 

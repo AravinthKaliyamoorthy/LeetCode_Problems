@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.FindSmallestMinMax;
+package FindSmallestMinMax;
 
 public class FindSmallestMinMax{
     
