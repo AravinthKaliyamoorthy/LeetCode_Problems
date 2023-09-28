@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="PatternPrinting"/>
 	<classpathentry kind="src" path="Prefix_Sum"/>
 	<classpathentry kind="src" path="Sub_Array"/>
+	<classpathentry excluding="Carry_Forward/|PatternPrinting/|Prefix_Sum/|Sub_Array/" kind="src" path=""/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
