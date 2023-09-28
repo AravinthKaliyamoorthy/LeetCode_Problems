@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.EvenSubarrays;
+package EvenSubarrays;
 
 public class EvenSubarrays {
     public static void main(String[] args) {

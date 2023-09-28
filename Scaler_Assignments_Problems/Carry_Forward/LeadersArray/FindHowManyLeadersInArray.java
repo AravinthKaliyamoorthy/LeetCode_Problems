@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Carry_Forward.LeadersArray;
+package LeadersArray;
 
 public class FindHowManyLeadersInArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.MaximumSubarrayWithTarget;
+package MaximumSubarrayWithTarget;
 
 public class MaximumSubarrayEasyWithTarget {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.SumOfAllSubArraySum;
+package SumOfAllSubArraySum;
 
 public class SumOfAllSubArraySum {
     public static void main(String[] args) {

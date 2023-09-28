@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Sub_Array.AmazingSumArray;
+package AmazingSumArray;
 
 public class AmazingSumArray {
     public static void main(String[] args) {

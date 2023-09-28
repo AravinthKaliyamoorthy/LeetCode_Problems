@@ -1,4 +1,4 @@
-package Scaler_Assignments_Problems.Prefix_Sum.ProductArrayPuzzle;
+package ProductArrayPuzzle;
 
 import java.util.*;
 
