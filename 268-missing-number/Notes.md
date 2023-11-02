@@ -1,1 +1,1 @@
-<h2>missing-number Notes</h2><hr>Using N*(N+1)
+<h2>missing-number Notes</h2><hr>Using N*(N+1)/2
